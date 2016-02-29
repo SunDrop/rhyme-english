@@ -1,0 +1,3 @@
+frontend_rythm_index:
+    defaults:   { _controller: RythmWebBundle:Rythm:index }
+    path:    /

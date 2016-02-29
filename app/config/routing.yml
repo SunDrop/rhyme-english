@@ -1,0 +1,3 @@
+_frontend:
+    resource: "@RythmWebBundle/Resources/config/routing/frontend.yml"
+    prefix:   /
