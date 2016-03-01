@@ -1,0 +1,3 @@
+frontend_rhyme_index:
+    defaults:   { _controller: RhymeWebBundle:Rhyme:index }
+    path:    /
