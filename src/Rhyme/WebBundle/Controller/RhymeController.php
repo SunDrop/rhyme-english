@@ -2,16 +2,15 @@
 
 namespace Rhyme\WebBundle\Controller;
 
-use Rhyme\WebBundle\DependencyInjection\RhymeParser;
+use Rhyme\WebBundle\DependencyInjection\Rhymer;
 use Symfony\Component\HttpFoundation\Response;
 
 class RhymeController
 {
     public function indexAction()
     {
-        $parser = new RhymeParser("best");
-        $rhyme = $parser->getRhymes();
-        var_dump($rhyme);
-        return new Response("123");
+        $rhymes = Rhymer::getRhymes('nation');
+        var_dump($rhymes);
+        return new Response('123');
     }
 }
